@@ -1,0 +1,296 @@
+.formWrapper {
+  position: relative;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.formContainer {
+  margin: 0 auto;
+  width: 1600px;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4% 0px 6% 0;
+}
+
+.helpText {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.formInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.inputs {
+  border: none;
+  outline: none;
+  padding: 15px 400px 15px 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.inputs:first-child {
+  margin: 0;
+}
+
+.messageInp {
+  padding-bottom: 20%;
+}
+
+.inputs::placeholder {
+  color: black;
+}
+
+.sendBtn {
+  cursor: pointer;
+  border: none;
+  background-color: rgba(152, 54, 251, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  border-radius: 25px;
+  margin-top: 20px;
+  padding: 10px 10%;
+}
+
+.footerDownWrapper {
+  background: rgba(29, 29, 29, 1);
+}
+
+.footerDownContainer {
+  margin: 0 auto;
+  width: 1600px;
+  max-width: 90%;
+  padding: 5% 0 4% 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstColumn {
+  display: flex;
+}
+
+.firstDownBlock {
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+  margin-right: 40px;
+}
+
+.category {
+  padding-bottom: 20px;
+}
+
+.secondDownBlock {
+  padding-top: 50px;
+}
+
+.secondColumn {
+  display: flex;
+}
+
+.thirdDownBlock {
+  height: 180px;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.downImages {
+  display: flex;
+}
+
+.downImages > img {
+  height: 25px;
+  cursor: pointer;
+}
+
+.facebook {
+  margin: 0 10px 0 10px;
+}
+
+.downTitleText {
+  color: #ffff;
+  margin-top: 58px;
+}
+
+.fourDownBlock {
+  height: 300px;
+  width: 300px;
+  background: no-repeat center/100% 100%
+    url(../../../public/footerGradientImage.png);
+  padding-left: 50px;
+}
+
+.politicInfoBlock {
+  color: rgba(171, 171, 171, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: -118px;
+}
+
+.politicText {
+  display: flex;
+  font-size: 14px;
+}
+
+.centeredPoliticText {
+  margin: 0 20px 0 20px;
+}
+
+.whatsappImage {
+  cursor: pointer;
+  margin-right: 80px;
+}
+
+.mobileWhatsapp {
+  position: absolute;
+  bottom: -40px;
+}
+
+@media (min-width: 1024px) and (max-width: 1100px) {
+  .fourDownBlock {
+    height: 280px;
+    width: 240px;
+  }
+}
+
+@media (min-width: 260px) and (max-width: 1024px) {
+  .formContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formInputs {
+    width: 90%;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .inputs {
+    padding: 15px 60% 15px 10px;
+  }
+
+  .messageInp {
+    padding-bottom: 20%;
+  }
+
+  .helpText {
+    margin-bottom: 20px;
+  }
+
+  .fourDownBlock {
+    background: none;
+  }
+
+  .politicInfoBlock {
+    margin: 0;
+  }
+
+  .infoBlock {
+    margin: 0 auto;
+    width: 600px;
+    max-width: 90%;
+    flex-direction: column;
+  }
+
+  .firstDownBlock {
+    margin: 0;
+  }
+
+  .firstColumn,
+  .secondColumn {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .fourDownBlock {
+    height: auto;
+    width: auto;
+  }
+
+  .thirdDownBlock {
+    height: 140px;
+    margin-top: 20px;
+  }
+
+  .downTitleText {
+    margin-top: 66px;
+  }
+
+  .politicText {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 260px) and (max-width: 450px) {
+  .formInputs {
+    width: 100%;
+  }
+
+  .inputs {
+    width: 100%;
+  }
+
+  .sendBtn {
+    width: 100%;
+  }
+
+  .messageInp {
+    padding-bottom: 30%;
+  }
+}
+
+@media (min-width: 260px) and (max-width: 550px) {
+  .footerDownContainer {
+    text-align: center;
+  }
+
+  .firstColumn,
+  .secondColumn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secondDownBlock {
+    padding-top: 20px;
+  }
+
+  .fourDownBlock {
+    width: 200px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .downTitleText {
+    margin: 0;
+  }
+
+  .helpText {
+    margin-top: 20px;
+  }
+
+  .formInputs {
+    margin-bottom: 50px;
+  }
+
+  .politicInfoBlock {
+    margin-bottom: 20px;
+  }
+
+  .footerDownContainer {
+    padding-top: 25%;
+  }
+}
