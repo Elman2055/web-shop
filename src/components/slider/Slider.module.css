@@ -1,0 +1,62 @@
+.choiceApp {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+
+.choiceApp::-webkit-scrollbar {
+  display: none;
+}
+
+.definiteApp {
+  line-height: 22px;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 2%;
+}
+
+.definiteApp:first-child {
+  margin-left: 1%;
+}
+
+.appBackground {
+  width: 37vw;
+  aspect-ratio: 14 / 9;
+}
+
+.apptextBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+
+.apptextBlock h4 {
+  color: #ffff;
+  font-size: clamp(0.688rem, -0.156rem + 1.13vw, 1.25rem);
+}
+
+.apptextBlock p {
+  color: rgba(152, 54, 251, 1);
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  .appBackground {
+    width: 54vw; 
+  }
+}
+
+@media (max-width: 700px) {
+  .appBackground {
+    width: 80vw;
+  }
+
+  .apptextBlock h4 {
+    font-size: 8px;
+  }
+
+  .apptextBlock p {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,261 @@
+.container {
+  margin: 0 auto;
+  width: 2000px;
+  max-width: 90%;
+  color: #ffff;
+}
+
+.categoryBlock {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.categoryText {
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: #ffff;
+  color: rgba(0, 0, 0, 1);
+  border-radius: 25px;
+  font-size: clamp(0.688rem, -0.088rem + 2.48vw, 1.5rem);
+  transition: all 0.4s ease;
+}
+
+.categoryText:hover {
+  background-color: #9836fb;
+  color: #ffff;
+}
+
+.gradientContainer {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.gradientBlock {
+  font-size: clamp(1.875rem, -3.125rem + 5vw, 3.125rem);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(135, 80, 224, 0.5) 0%,
+    rgba(50, 50, 50, 0) 100%
+  );
+  width: 15%;
+  padding: 6% 0;
+  margin: 0 3% 0 6%;
+}
+
+.contactsTitle {
+  margin-left: -40px;
+}
+
+.contacts {
+  font-size: clamp(1.875rem, -1.563rem + 5vw, 3.125rem);
+}
+
+.contacts span {
+  color: #9836fb;
+}
+
+.contactsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  width: 85%;
+  font-size: clamp(0.875rem, -0.174rem + 1.64vw, 1.875rem);
+}
+
+.firstRow {
+  position: relative;
+  display: contents;
+}
+
+.firstRowColumn {
+  padding: 50% 0 10% 9%;
+  border-radius: 25px;
+}
+
+.firstColumn {
+  background: linear-gradient(180deg, #262525 0%, #1a1a1a 100%);
+}
+
+.secondColumn {
+  position: relative;
+  z-index: 12;
+  background: #323131;
+}
+
+.thirdColumn {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(206, 157, 255, 0.2) 100%
+  );
+  z-index: 10;
+}
+
+.thirdColumnWrapper {
+  position: absolute;
+  top: -55%;
+  right: -51%;
+  height: 150%;
+  width: 150%;
+  background: no-repeat center / 100% 100% url(/public/footerGradientImage.png);
+  z-index: 1;
+}
+
+.thirdColumnWrapperPurple {
+  position: absolute;
+  top: 6%;
+  left: -58%;
+  height: 150%;
+  width: 150%;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(135, 80, 224, 0.5) 0%,
+    rgba(50, 50, 50, 0) 100%
+  );
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.secondRow {
+  display: contents;
+}
+
+.downColumn {
+  border-radius: 25px;
+  padding: 12% 0% 18% 10%;
+}
+
+.fourColumn {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(206, 157, 255, 0.2) 100%
+  );
+  z-index: 10;
+}
+
+.fourColumnWrapper {
+  position: absolute;
+  top: -9%;
+  left: -47%;
+  height: 170%;
+  width: 149%;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(254, 182, 44, 0.3) 0%,
+    rgba(87, 123, 193, 0.0963001) 33.33%,
+    rgba(5, 31, 83, 0.0978001) 66.67%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+}
+
+.fiveColumn {
+  position: relative;
+  z-index: 12;
+  background: linear-gradient(179.72deg, #313131 0.24%, #1a1a1a 70.39%);
+}
+
+.sixColumn {
+  position: relative;
+  z-index: 12;
+  background: linear-gradient(180deg, #262525 0%, #1a1a1a 100%);
+}
+
+.contactsContainerMobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobileColumn {
+  width: 400px;
+  max-width: 100%;
+  background-color: #9836fb;
+  border-radius: 25px;
+  padding: 40px 25px;
+}
+
+.firstColumnMobile {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(206, 157, 255, 0) 100%
+  );
+}
+
+.secondColumnMobile {
+  background: linear-gradient(194.58deg, #514f4f 6.86%, #1a1a1a 52.9%);
+}
+
+.thirdColumnMobile {
+  background: linear-gradient(194.58deg, #434343 6.86%, #1a1a1a 52.9%);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 600px;
+    max-width: 90%;
+  }
+
+  .container::after {
+    content: "";
+    display: block;
+    height: 30px;
+  }
+
+  .contacts {
+    text-align: right;
+  }
+
+  .gradientContainer {
+    justify-content: center;
+  }
+
+  .gradientBlock {
+    background: none;
+  }
+
+  .contacts {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(135, 80, 224, 0.5) 0%,
+      rgba(50, 50, 50, 0) 100%
+    );
+    width: 20%;
+    padding: 3% 0;
+    margin-right: 20%;
+  }
+
+  .contacts p {
+    width: 177px;
+    margin-left: 50%;
+  }
+}
+
+@media (max-width: 430px) {
+  .contacts {
+    width: 29%;
+  }
+
+  .contacts p {
+    margin-left: clamp(0rem, -9.281rem + 45vw, 2.813rem);
+  }
+}
+
+@media (max-width: 500px) {
+  .categoryText {
+    font-size: 8px;
+  }
+}

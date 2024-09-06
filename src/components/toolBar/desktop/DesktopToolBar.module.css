@@ -1,12 +1,13 @@
 .wrapper {
   background-color: #1d1d1d;
-  box-shadow: 0px 2px 2px 0px #00000033;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   padding: 30px 0px;
 }
 
 .container {
   margin: 0 auto;
-  width: 1600px;
+  width: 2000px;
   max-width: 90%;
   display: flex;
   justify-content: space-between;
@@ -34,22 +35,22 @@ a:active {
 }
 
 .textNavContainer > a > p {
-  font-size: 15px;
+  font-size: clamp(0.938rem, -1.563rem + 2.5vw, 1.563rem);
   margin-left: 40px;
 }
 
 .heading {
-  line-height: 20px;
+  line-height: clamp(1.25rem, -2rem + 3.25vw, 2.063rem);
   text-align: right;
 }
 
 .title {
-  font-size: 30px;
+  font-size: clamp(1.875rem, -0.625rem + 2.5vw, 2.5rem);
 }
 
 .miniTitle {
   text-align: right;
-  font-size: 13px;
+  font-size: clamp(0.813rem, -0.938rem + 1.75vw, 1.25rem);
 }
 
 .blockNavContainer {
@@ -70,7 +71,7 @@ a:active {
   border: 2px solid #9836fb;
   border-radius: 24px;
   padding: 8px 22px;
-  font-size: 15px;
+  font-size: clamp(0.938rem, -1.313rem + 2.25vw, 1.5rem);
   transition: background-color 0.5s ease;
 }
 

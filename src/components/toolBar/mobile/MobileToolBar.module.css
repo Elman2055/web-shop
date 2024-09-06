@@ -188,10 +188,23 @@
   line-height: 22px;
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 415px) {
   .login {
     padding: 12px 30px;
     margin-right: 3px;
+  }
+
+  .signUp {
+    padding: 12px 10px;
+  }
+
+  .registerBtns > span {
+    font-size: 16px;
+  }
+
+  .login {
+    padding: 12px 25px;
+    margin-right: 8px;
   }
 
   .signUp {

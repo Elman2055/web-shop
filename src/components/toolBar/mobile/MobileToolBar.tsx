@@ -62,14 +62,24 @@ const MobileToolBar = () => {
               setIsOpen(false);
             }}
           >
-            <NavLink to={"/"}>Главная</NavLink>
+            <NavLink
+              to={"/"}
+              className={({ isActive }) => (isActive ? styles.active : "")}
+            >
+              Главная
+            </NavLink>
           </li>
           <li
             onClick={() => {
               setIsOpen(false);
             }}
           >
-            <NavLink to={"/"}>Контакты</NavLink>
+            <NavLink
+              to={"/contacts"}
+              className={({ isActive }) => (isActive ? styles.active : "")}
+            >
+              Контакты
+            </NavLink>
           </li>
           <li
             onClick={() => {

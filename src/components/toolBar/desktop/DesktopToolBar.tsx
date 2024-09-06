@@ -14,10 +14,16 @@ const DesktopToolBar = () => {
               <span className={styles.miniTitle}>Shop</span>
             </NavLink>
           </div>
-          <NavLink to={"/"}>
+          <NavLink
+            to={"/"}
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
             <p>Главная</p>
           </NavLink>
-          <NavLink to={"/"}>
+          <NavLink
+            to={"/contacts"}
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
             <p>Контакты</p>
           </NavLink>
           <NavLink to={"/"}>

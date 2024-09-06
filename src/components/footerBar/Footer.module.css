@@ -5,7 +5,7 @@
 
 .formContainer {
   margin: 0 auto;
-  width: 1600px;
+  width: 2000px;
   max-width: 90%;
   display: flex;
   justify-content: space-between;
@@ -48,7 +48,7 @@
   border: none;
   background-color: rgba(152, 54, 251, 1);
   color: rgba(255, 255, 255, 1);
-  font-size: 20px;
+  font-size: clamp(1.25rem, -1.25rem + 2.5vw, 1.875rem);
   border-radius: 25px;
   margin-top: 20px;
   padding: 10px 10%;
@@ -60,7 +60,7 @@
 
 .footerDownContainer {
   margin: 0 auto;
-  width: 1600px;
+  width: 2000px;
   max-width: 90%;
   padding: 5% 0 4% 0;
   display: flex;
@@ -292,5 +292,20 @@
 
   .footerDownContainer {
     padding-top: 25%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .inputs {
+    width: 40vw;
+    padding: 2%;
+  }
+
+  .messageInp {
+    padding-bottom: 22%;
+  }
+
+  .inputs::placeholder {
+    font-size: 20px;
   }
 }

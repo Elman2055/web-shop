@@ -1,0 +1,503 @@
+.container {
+  margin: 0 auto;
+  width: 2000px;
+  max-width: 90%;
+}
+
+.GradientTextBlock {
+  width: 90%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.purpleGradientBlock {
+  color: #ffff;
+  font-size: 30px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(135, 80, 224, 0.5) 0%,
+    rgba(50, 50, 50, 0) 100%
+  );
+  width: 25%;
+  padding: 11% 0 11% 2%;
+  margin-right: 5%;
+}
+
+.titleFirstBlock p {
+  font-size: clamp(1.875rem, -1.563rem + 5vw, 3.125rem);
+  color: rgba(255, 255, 255, 1);
+}
+
+.titleFirstBlock span {
+  color: rgba(152, 54, 251, 1);
+}
+
+.titleFirstBlock h3 {
+  font-size: 30px;
+  font-weight: 100;
+  color: #ffff;
+  text-align: right;
+}
+
+.productBlock {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+  margin: 4% 0;
+}
+
+.productBlock img {
+  aspect-ratio: 12/9;
+  width: 48%;
+}
+
+.productBlock img:last-child {
+  margin-top: 4%;
+}
+
+.freeWebBlock {
+  position: relative;
+  height: 50%;
+  width: 48%;
+  background: linear-gradient(
+    214.62deg,
+    rgba(255, 255, 255, 0.5) -25.67%,
+    rgba(206, 157, 255, 0.05) 37.05%
+  );
+  border-radius: 25px;
+  margin-top: 4%;
+  padding-bottom: 19%;
+}
+
+.freeWebText {
+  position: absolute;
+  bottom: -23%;
+  left: 6%;
+}
+
+.freeWebText p {
+  font-size: 20px;
+  color: #ffff;
+}
+
+.freeWebText h6 {
+  color: #ffff;
+  font-size: clamp(1.875rem, -1.563rem + 5vw, 3.125rem);
+  font-weight: 200;
+}
+
+.categoryBlock {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.categoryText {
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: #ffff;
+  color: rgba(0, 0, 0, 1);
+  border-radius: 25px;
+  font-size: clamp(0.688rem, -0.088rem + 2.48vw, 1.5rem);
+  transition: all 0.4s ease;
+}
+
+.categoryText:hover {
+  background-color: #9836fb;
+  color: #ffff;
+}
+
+.yorIdeasGradientWrapper {
+  position: relative;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5%;
+  padding-bottom: 25%;
+}
+
+.yorIdeasGradientBlock {
+  position: relative;
+  width: 55%;
+  padding: 25% 0;
+  background: radial-gradient(
+    93.31% 93.31% at 50% 50%,
+    rgb(92 255 134 / 30%) 0%,
+    rgb(105 105 105 / 10%) 33.33%,
+    rgba(5, 31, 83, 0.0978001) 66.67%,
+    rgb(0 0 0 / 0%) 100%
+  );
+  color: #ffff;
+  border-radius: 50%;
+  font-size: clamp(0.875rem, -0.125rem + 4vw, 3.125rem);
+}
+
+.GradientBlockAnswer {
+  position: absolute;
+  top: 10%;
+  left: -80%;
+  z-index: 2;
+}
+
+.yorIdeasBlock {
+  position: absolute;
+  top: 25%;
+  left: -80%;
+  height: 100%;
+  width: 180%;
+  background: linear-gradient(
+    180deg,
+    rgba(219, 217, 217, 0.5) 0%,
+    rgba(206, 157, 255, 0.2) 100%
+  );
+  border-radius: 25px;
+  text-align: right;
+  z-index: 1;
+}
+
+.yorIdeasBlock span {
+  color: #9836fb;
+}
+
+.yorIdeasBlock .answerMark {
+  font-size: clamp(3.125rem, -5.821rem + 28.63vw, 12.5rem);
+  color: #ffff;
+}
+
+.yorIdeasBlock p {
+  width: 75%;
+  line-height: 60px;
+  font-size: clamp(1.25rem, -1.135rem + 7.63vw, 3.75rem);
+  padding-top: 8%;
+  font-weight: 600;
+}
+
+.downTitleBlock {
+  max-width: 700px;
+  position: absolute;
+  font-size: clamp(1.25rem, 1.25vw, 1.563rem);
+  top: 70%;
+  left: 5%;
+  color: #ffff;
+}
+
+.secondCarousel {
+  margin-top: 10%;
+}
+
+.howWorkBlock {
+  width: 25%;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(135, 80, 224, 0.5) 0%,
+    rgba(50, 50, 50, 0) 100%
+  );
+  padding: 13% 0;
+  border-radius: 50%;
+  margin: 5% 0 0 250px;
+}
+
+.howWorkText {
+  font-size: clamp(1.75rem, -0.168rem + 8.07vw, 5rem);
+  color: #ffff;
+  margin-top: -22%;
+  padding-bottom: 4%;
+}
+
+.howWorkText span {
+  color: #9836fb;
+}
+
+.howWorkDownText {
+  font-size: clamp(1.063rem, 0.141rem + 3.88vw, 2.625rem);
+  color: #ffff;
+}
+
+.howWorkDownText span {
+  color: #9836fb;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  margin-top: 8%;
+  padding-bottom: 8%;
+}
+
+.infoBlock {
+  background: linear-gradient(180deg, #333333 0%, #181818 100%);
+  padding: 20px 0 20px 20px;
+  border-radius: 10px;
+  color: #ffff;
+}
+
+.numberBlock p {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  color: #ffff;
+  padding-bottom: 60px;
+}
+
+.title {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #ffff;
+}
+
+ul {
+  list-style-position: inside;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: clamp(0.75rem, -3.854rem + 4.33vw, 1.563rem);
+  color: #ffff;
+}
+
+.faq {
+  font-size: 60px;
+  color: #ffff;
+  margin-bottom: 30px;
+}
+
+.faqBlock {
+  color: #ffff;
+}
+
+.faqBlock:last-child {
+  padding-bottom: 10%;
+}
+
+.faqBlock div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.faqTitle {
+  font-size: 30px;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #ffff;
+  border-radius: 25px;
+  margin: 20px 0;
+}
+
+.mobileWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.freeInfoBlock {
+  position: relative;
+  width: 500px;
+  max-width: 90%;
+  background: rgba(72, 72, 72, 0.5);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffff;
+  padding: 30px 0 50px 0;
+  margin: 10% 0 10% 0;
+}
+
+.freeInfoText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.freeInfoText span {
+  font-size: clamp(0.688rem, 0.021rem + 2.67vw, 1.188rem);
+}
+
+.freeInfoBlock p {
+  font-size: clamp(1.188rem, 0.938rem + 1vw, 1.375rem);
+}
+
+.giftText {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.giftText p {
+  font-size: clamp(0.688rem, 0.021rem + 2.67vw, 1.188rem);
+}
+
+.gift {
+  position: absolute;
+  right: 0;
+  background: rgba(152, 54, 251, 1);
+  padding: 10px 0 10px 15px;
+  border-radius: 25px 0 0 25px;
+}
+
+.downTitleFaq {
+  font-size: clamp(1rem, -2rem + 3vw, 1.75rem);
+}
+
+@media (min-width: 1024px) and (max-width: 1286px) {
+  .yorIdeasGradientWrapper {
+    padding-bottom: 365px;
+  }
+
+  .yorIdeasBlock {
+    height: 555px;
+  }
+
+  .yorIdeasBlock p {
+    width: auto;
+    padding-right: 10%;
+  }
+}
+
+@media (min-width: 260px) and (max-width: 1024px) {
+  .yorIdeasGradientBlock {
+    padding: 58% 0;
+  }
+
+  .yorIdeasBlock {
+    top: 22%;
+    height: 78%;
+  }
+
+  .GradientBlockAnswer {
+    left: 0;
+  }
+
+  .yorIdeasBlock p {
+    width: auto;
+    line-height: 50px;
+    padding-right: 10%;
+  }
+
+  .downTitleBlock {
+    font-size: 17px;
+    top: 65%;
+  }
+
+  .howWorkBlock {
+    background: none;
+  }
+}
+
+@media (min-width: 718px) and (max-width: 1024px) {
+  .yorIdeasGradientBlock {
+    padding: 48% 0;
+  }
+
+  .yorIdeasBlock {
+    height: 74%;
+  }
+}
+
+@media (max-width: 400px) {
+  .freeInfoBlock {
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 260px) and (max-width: 600px) {
+  .yorIdeasGradientWrapper {
+    width: 100%;
+  }
+
+  .yorIdeasBlock p {
+    line-height: 30px;
+  }
+
+  .downTitleBlock {
+    width: 77%;
+    top: 60%;
+    font-size: 11px;
+  }
+
+  .yorIdeasBlock {
+    height: 65%;
+  }
+}
+
+@media (min-width: 525px) and (max-width: 600px) {
+  .downTitleBlock {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 600px) {
+  .yorIdeasGradientBlock {
+    padding: 40% 0;
+  }
+}
+
+@media (max-width: 370px) {
+  .yorIdeasGradientBlock {
+    padding: 70% 0;
+  }
+}
+
+@media (min-width: 260px) and (max-width: 620px) {
+  .gridContainer {
+    display: flex;
+    justify-content: normal;
+    overflow: auto;
+  }
+
+  .title {
+    width: 250px;
+  }
+
+  .gridContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .dash {
+    width: 6%;
+  }
+
+  .faq {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+
+  .faqTitle {
+    font-size: 17px;
+  }
+
+  .downTitleFaq {
+    font-size: 14px;
+  }
+
+  .howWorkBlock {
+    margin: 5% 0 0 200px;
+  }
+}
+
+@media (max-width: 450px) {
+  .yorIdeasGradientBlock {
+    padding: 58% 0 58% 94%;
+  }
+
+  .yorIdeasBlock {
+    width: 101%;
+    left: -5%;
+  }
+
+  .categoryText {
+    font-size: 8px;
+  }
+}
