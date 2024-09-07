@@ -57,8 +57,8 @@ const Contacts = () => {
           <div className={styles.secondRow}>
             <div className={`${styles.downColumn} ${styles.fourColumn}`}>
               <p>
-                Телефоны <br /> бесплатные <br /> По Алмате:8800 200-40-33{" "}
-                <br /> В Москве:+7495 105-91-24
+                Телефоны <br /> бесплатные <br /> По Алмате: +7495 105-91-24{" "}
+                <br /> В Москве: 8800 200-40-33
               </p>
               <div className={styles.fourColumnWrapper}></div>
             </div>

@@ -24,6 +24,8 @@
 .appBackground {
   width: 37vw;
   aspect-ratio: 14 / 9;
+  object-fit: cover;
+  border-radius: 25px;
 }
 
 .apptextBlock {
@@ -43,7 +45,7 @@
 
 @media (min-width: 700px) and (max-width: 1024px) {
   .appBackground {
-    width: 54vw; 
+    width: 54vw;
   }
 }
 

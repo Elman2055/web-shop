@@ -1,16 +1,20 @@
-import business from "../../../public/business.png";
-import seo from "../../../public/seo.png";
 import Slider from "../slider/Slider";
-import { firstCarousel } from "./infoMain.data";
-import { secondCarousel } from "./infoMain.data";
+import { TMainApi } from "../../types/data.types";
 import { infoBlock } from "./infoMain.data";
 import { faqBlock } from "./infoMain.data";
 import pc from "../../../public/pc.png";
 import useDesktop from "../hooks/useDesktop";
+import { useNavigate } from "react-router-dom";
 import styles from "./MainPage.module.css";
 
-const MainPage = () => {
+const MainPage = ({
+  firstRowMainBg,
+  secondRowMainBg,
+  firstCarousel,
+  secondCarousel,
+}: TMainApi) => {
   const isDesktop = useDesktop();
+  const navigate = useNavigate();
 
   return (
     <>
@@ -32,8 +36,17 @@ const MainPage = () => {
               </div>
             </div>
             <div className={styles.productBlock}>
-              <img src={seo} alt="seo web-site" />
-              <img src={business} alt="business web-site" />
+              {firstRowMainBg.map((el) => (
+                <img
+                  key={el.product_id}
+                  src={`https://webshop2.kz/api/products/previewImage/${el.image_preview}`}
+                  alt="app"
+                  className={styles.imageRadius}
+                  onClick={() =>
+                    navigate({ pathname: `product/${el.product_id}` })
+                  }
+                />
+              ))}
               <div className={styles.freeWebBlock}>
                 <div className={styles.freeWebText}>
                   <p>При покупке от 3 сайтов </p>
@@ -42,7 +55,17 @@ const MainPage = () => {
                   </h6>
                 </div>
               </div>
-              <img src={business} alt="business web-site" />
+              {secondRowMainBg.map((el) => (
+                <img
+                  key={el.product_id}
+                  src={`https://webshop2.kz/api/products/previewImage/${el.image_preview}`}
+                  alt="app"
+                  className={styles.imageRadius}
+                  onClick={() =>
+                    navigate({ pathname: `product/${el.product_id}` })
+                  }
+                />
+              ))}
             </div>
           </>
         ) : (

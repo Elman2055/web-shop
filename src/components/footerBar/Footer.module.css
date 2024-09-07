@@ -142,6 +142,14 @@
   font-size: 14px;
 }
 
+.politicText a {
+  color: rgba(171, 171, 171, 1);
+}
+
+.politicText a:hover {
+  color: #9836fb;
+}
+
 .centeredPoliticText {
   margin: 0 20px 0 20px;
 }

@@ -41,7 +41,9 @@
 
 .productImage {
   width: 50%;
-  aspect-ratio: 9 / 9;
+  aspect-ratio: 11 / 9;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 .productTitle {

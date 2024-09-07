@@ -85,27 +85,3 @@ export const faqBlock = [
       "Lorem ipsum dolor sit amet consectetur. Adipiscing cras sagittis posuere convallis id. Pharetra arcu massa sed dhjkafv fffdj aliquet. Tristique amet cursus nibh ac pretium. Sit egestas aliquet enim enim. Phasellus nascetur ullamcorperdds seddvae lacus fdfg fdvolutpat df tellus porttitor. Gravida phasellus scelerisque nulla quam amet. Massa aliquam mauris et purusdfas phasellus leo. Risus rev fv k lobortis mi tellus. Gravida phasellus scelerisque nulla quam amet. Massa aliquam mauris eta purus phasellus leo. Risus lobortis mi tellus.",
   },
 ];
-
-export const firstCarousel = [
-  { id: 1, img: business, title: "ПРОФЕССИОНАЛЬНЫЙ БЛОГ", price: "50 000тг" },
-  { id: 2, img: hero, title: "КОРПОРАТИВНЫЙ САЙТ", price: "30 000тг" },
-  { id: 3, img: business, title: "ПРОФЕССИОНАЛЬНЫЙ БЛОГ", price: "50 000тг" },
-  { id: 4, img: hero, title: "КОРПОРАТИВНЫЙ САЙТ", price: "30 000тг" },
-];
-
-export const secondCarousel = [
-  { id: 3, img: shop, title: "ГОТОВЫЙ ИНТЕРНЕТ МАГАЗИН", price: "36 000тг" },
-  {
-    id: 4,
-    img: seo,
-    title: "ПРОФЕССИОНАЛЬНЫЙ БЛОГ ДЛЯ ВАШИХ ИДЕЙ",
-    price: "50 000тг",
-  },
-  { id: 5, img: shop, title: "ГОТОВЫЙ ИНТЕРНЕТ МАГАЗИН", price: "36 000тг" },
-  {
-    id: 6,
-    img: seo,
-    title: "ПРОФЕССИОНАЛЬНЫЙ БЛОГ ДЛЯ ВАШИХ ИДЕЙ",
-    price: "50 000тг",
-  },
-];

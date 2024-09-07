@@ -111,9 +111,21 @@ const Footer = () => {
             <div className={styles.politicText}>
               <p>© Copyright 2024 WEBshop</p>
               <p className={styles.centeredPoliticText}>
-                Политика конфидециальности
+                <a
+                  href="https://webshop2.kz/api/user/documents/privacy-policy.pdf"
+                  target="_blank"
+                >
+                  Политика конфидециальности
+                </a>
               </p>
-              <p>Публичная оферта</p>
+              <p>
+                <a
+                  href="https://webshop2.kz/api/user/documents/public-offer.pdf"
+                  target="_blank"
+                >
+                  Публичная оферта
+                </a>
+              </p>
             </div>
             {isDesktop ? (
               <img

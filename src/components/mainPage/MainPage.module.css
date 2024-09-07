@@ -39,6 +39,12 @@
   text-align: right;
 }
 
+.imageRadius {
+  border-radius: 15px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
 .productBlock {
   width: 90%;
   display: flex;
